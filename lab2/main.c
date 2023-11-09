@@ -1,6 +1,5 @@
 #include <avr/io.h>
 #include <util/delay.h>
-#define LED_PIN PB1 // вбудований в Arduino nano світлодіод
 
 uint8_t direction = 0, data = 1, is_run = 1;
 void key_handler(uint8_t ks);
@@ -44,10 +43,6 @@ void key_handler(uint8_t ks)
         direction ^=1;
         is_run = 1;
     }
-}
-
-void johnsons_counter(){
-    
 }
 
 //-----------------------------------------------------------
